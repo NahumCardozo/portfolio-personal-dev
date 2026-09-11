@@ -10,6 +10,7 @@ body{
     background:#111827;
     color:white;
     line-height:1.6;
+    background-image: url(./img/fondo.jpg);
 }
 
 header{
@@ -128,5 +129,5 @@ footer{
 
 #sobre-mi,
 #aprendiendo{
-    background:#172033;
+    background:#000000;
 }
