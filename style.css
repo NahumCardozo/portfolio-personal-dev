@@ -18,21 +18,21 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:#1f2937;
+    background:#babec5;
     position:sticky;
     top:0;
     
 }
 
 nav a{
-    color:white;
+    color:rgb(255, 2, 2);
     text-decoration:none;
-    margin-left:20px;
+    margin-left:80px;
     transition:.3s;
 }
 
 nav a:hover{
-    color:#38bdf8;
+    color:#00aaff;
 }
 
 .hero{
@@ -130,4 +130,10 @@ footer{
 #sobre-mi,
 #aprendiendo{
     background:#000000;
+}
+
+.copyright{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000000;
 }
