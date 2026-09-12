@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-    background-attachment: fixed;
-    color:white;
-    line-height:1.6;
     background-image: url(./img/fondo.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.6;
 }
 
 header{
@@ -24,8 +29,6 @@ header{
     background: rgba(15, 23, 42, 0.4); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
-    
-    
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     position: fixed;
@@ -45,9 +48,8 @@ header{
     height: 45px;
     border-radius: 50%; 
     object-fit: cover;  
-    border: 2px solid #000000;
+    border: 2px solid #38bdf8;
 }
-
 
 nav a{
     color: #ffffff;
@@ -70,18 +72,19 @@ nav a:hover{
 }
 
 .hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
     padding: 120px 20px 20px 20px;
 }
 
 .hero h1{
-    font-size: 50px;
-    margin-bottom: 100px;
+    font-size: 60px;
+    margin-bottom: 24px;
+    line-height: 1.2;
     background: linear-gradient(to right, #ffffff, #38bdf8);
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,47 +92,50 @@ nav a:hover{
 }
 
 .hero p{
-    max-width:600px;
-    margin-bottom:100px;
-    color:#d1d5db;
+    max-width: 650px;    
+    margin-bottom: 40px; 
+    line-height: 1.8;   
+    color: #d1d5db;
+    font-size: 18px;
 }
 
 .boton{
-    background:#38bdf8;
-    color:white;
-    padding:15px 30px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
+    background: #38bdf8;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 .boton:hover{
-    background:#0ea5e9;
+    background: #0ea5e9;
 }
 
 section{
-    padding:80px 8%;
-
+    padding: 80px 8%;
 }
 
 section h2{
-    text-align:center;
-     margin-bottom:40px;
-    font-size:35px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
 }
 
 section p{
-    text-align:center;
-    max-width:600px;
-    margin:0 auto 40px auto;
-    color:#d1d5db;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    color: #d1d5db;
 }
+
 .contenedor-tecnologias,
 .contenedor-proyectos{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card,
@@ -151,51 +157,70 @@ section p{
     box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.25);
 }
 
-footer{
-    text-align:center;
-    padding:40px;
-    background:transparent;
+
+footer {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background: transparent;
 }
 
-footer a{
-    color:#38bdf8;
-    text-decoration:none;
-    
+footer p {
+    margin-bottom: 16px;
+    color: #9ca3af;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-footer a:hover{
-    text-decoration:underline;
-    
-    
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
-@media(max-width:768px){
 
+footer a:hover {
+    color: #38bdf8;
+    border-color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+    transform: translateY(-2px);
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #6b7280;
+}
+
+@media(max-width: 768px){
     header{
-        flex-direction:column;
-        gap:15px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero h1{
-        font-size:40px;
+        font-size: 40px;
     }
-
 }
 
 #sobre-mi,
 #aprendiendo{
-    background:transparent;
-}
-
-.copyright{
-    margin-top: 90px;
+    background: transparent;
     font-size: 18px;
-    color: #9ca3af;
-    text-align: left;
+    
 }
