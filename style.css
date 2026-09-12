@@ -7,10 +7,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:#111827;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    background-attachment: fixed;
     color:white;
     line-height:1.6;
-    background-image: url(./img/fondo.jpg);
+    background-image: url(./img/fondo.avif);
 }
 
 header{
@@ -19,11 +20,18 @@ header{
     align-items: center;
     width: 100%;
 
-    padding: 20px 8%;
-    background: transparent;
+    padding: 15px 8%;
+    background: rgba(15, 23, 42, 0.4); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .perfil-header{
@@ -42,14 +50,23 @@ header{
 
 
 nav a{
-    color:rgb(255, 255, 255);
-    text-decoration:none;
-    margin-left:80px;
-    transition:.3s;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px; 
+    padding: 8px 16px; 
+    border-radius: 8px; 
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 nav a:hover{
-    color:#00aaff;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15); 
+    border-color: #38bdf8; 
+    transform: translateY(-2px); 
 }
 
 .hero{
@@ -59,17 +76,21 @@ nav a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    padding: 120px 20px 20px 20px;
 }
 
 .hero h1{
-    font-size:70px;
-    margin-bottom:20px;
+    font-size: 50px;
+    margin-bottom: 100px;
+    background: linear-gradient(to right, #ffffff, #38bdf8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p{
     max-width:600px;
-    margin-bottom:30px;
+    margin-bottom:100px;
     color:#d1d5db;
 }
 
@@ -88,14 +109,21 @@ nav a:hover{
 
 section{
     padding:80px 8%;
+
 }
 
 section h2{
     text-align:center;
-    margin-bottom:40px;
+     margin-bottom:40px;
     font-size:35px;
 }
 
+section p{
+    text-align:center;
+    max-width:600px;
+    margin:0 auto 40px auto;
+    color:#d1d5db;
+}
 .contenedor-tecnologias,
 .contenedor-proyectos{
     display:flex;
@@ -105,24 +133,40 @@ section h2{
 }
 
 .card,
-.proyecto{
-    background:#1f2937;
-    padding:30px;
-    border-radius:10px;
-    width:250px;
-    text-align:center;
-    transition:.3s;
+.proyecto {
+    background: rgba(30, 41, 59, 0.7); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .card:hover,
-.proyecto:hover{
-    transform:translateY(-8px);
+.proyecto:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8; 
+    box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.25);
 }
 
 footer{
     text-align:center;
     padding:40px;
-    background:#1f2937;
+    background:transparent;
+}
+
+footer a{
+    color:#38bdf8;
+    text-decoration:none;
+    
+}
+
+footer a:hover{
+    text-decoration:underline;
+    
+    
 }
 
 @media(max-width:768px){
@@ -146,11 +190,12 @@ footer{
 
 #sobre-mi,
 #aprendiendo{
-    background:#000000;
+    background:transparent;
 }
 
 .copyright{
-    margin-top: 20px;
-    font-size: 14px;
-    color: #000000;
+    margin-top: 90px;
+    font-size: 18px;
+    color: #9ca3af;
+    text-align: left;
 }
