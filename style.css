@@ -26,9 +26,23 @@ header{
     top: 0;
 }
 
+.perfil-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.foto-header {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    object-fit: cover;  
+    border: 2px solid #000000;
+}
+
 
 nav a{
-    color:rgb(255, 2, 2);
+    color:rgb(255, 255, 255);
     text-decoration:none;
     margin-left:80px;
     transition:.3s;
