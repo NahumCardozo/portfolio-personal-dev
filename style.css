@@ -110,6 +110,26 @@ nav a:hover{
     transition: background 0.3s ease;
 }
 
+.boton-proyecto { 
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background: transparent;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.boton-proyecto:hover {
+    background: #38bdf8;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    transform: translateY(-3px);
+}
+
 .boton:hover{
     background: #0ea5e9;
 }
