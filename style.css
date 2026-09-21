@@ -236,19 +236,79 @@ footer h2 {
     color: #6b7280;
 }
 
-@media(max-width: 768px){
-    header{
-        flex-direction: column;
-        gap: 15px;
+@media (max-width: 768px) {
+
+    html {
+        scroll-padding-top: 150px;
     }
 
-    nav{
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .perfil-header {
+        gap: 8px;
+    }
+
+    .foto-header {
+        width: 40px;
+        height: 40px;
+    }
+
+    .perfil-header h2 {
+        font-size: 20px;
+    }
+
+    nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 8px;
     }
 
-    .hero h1{
+    nav a {
+        margin-left: 0;
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 180px 20px 70px;
+    }
+
+    .hero h1 {
         font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .foto-hero {
+        width: min(550px, 90%);
+        height: 180px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .card,
+    .proyecto {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .redes-contacto {
+        gap: 12px;
     }
 }
