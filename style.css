@@ -89,47 +89,18 @@ nav a:hover{
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
-    width: 100%;   
-}
-
-.contenedor-imagenes-tecnologias {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20PX;
-    flex-wrap: wrap;
     width: 100%;
 }
 
-.contenedor-imagenes-hero img {
-    width: min(300px, 100%); 
-    height: 400px; 
-    object-fit: cover; 
-    border-radius: 15px; 
-    border: 1px solid rgba(255, 255, 255, 0.15); 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
-    transition: transform 0.3s ease;
-}
-
+.contenedor-imagenes-hero img,
 .contenedor-imagenes-proyectos img {
-    width: min(300px, 100%); 
-    height: 400px; 
-    object-fit: cover; 
-    border-radius: 15px; 
-    border: 1px solid rgba(255, 255, 255, 0.15); 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
-    transition: transform 0.3s ease;
-}
-
-.contenedor-imagenes-tecnologias img {
-    width: min(400px, 100%); 
-    height: 400px; 
-    object-fit: cover; 
-    border-radius: 15px; 
-    border: 1px solid rgba(255, 255, 255, 0.15); 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
@@ -158,6 +129,7 @@ nav a:hover{
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    margin-top: 200px;
     transition: background 0.3s ease;
 }
 
@@ -305,7 +277,7 @@ footer {
 @media (max-width: 768px) {
 
     html {
-        scroll-padding-top: 150px;
+        scroll-padding-top: 20px;
     }
 
     header {
@@ -324,7 +296,7 @@ footer {
         height: 40px;
     }
 
-    .perfil-header h2 {
+    .perfil-header p {
         font-size: 20px;
     }
 
@@ -356,11 +328,11 @@ footer {
         line-height: 1.6;
     }
 
-    .foto-hero {
-        width: 100%;
-        max-width: 550px;
-        height: 150px;
-    }
+    .contenedor-imagenes-hero img,
+.contenedor-imagenes-proyectos img {
+    max-width: 350px;
+    height: auto;
+}
 
     section {
         padding: 70px 20px;
@@ -378,5 +350,22 @@ footer {
 
     .redes-contacto {
         gap: 12px;
+
     }
 }
+
+@media (max-width: 480px) {
+
+    .contenedor-imagenes-hero,
+    .contenedor-imagenes-proyectos {
+        gap: 15px;
+    }
+
+    .contenedor-imagenes-hero img,
+.contenedor-imagenes-proyectos img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+}
+
