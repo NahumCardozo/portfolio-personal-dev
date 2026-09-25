@@ -82,14 +82,55 @@ nav a:hover{
     padding: 160px 20px 80px 20px;
 }
 
-.foto-hero {
-    width: min(550px, 90%);
-    height: 280px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 45px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+.contenedor-imagenes-hero,
+.contenedor-imagenes-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;   
+}
+
+.contenedor-imagenes-tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20PX;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contenedor-imagenes-hero img {
+    width: min(300px, 100%); 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease;
+}
+
+.contenedor-imagenes-proyectos img {
+    width: min(300px, 100%); 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease;
+}
+
+.contenedor-imagenes-tecnologias img {
+    width: min(400px, 100%); 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease;
 }
 
 .hero h1{
