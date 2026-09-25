@@ -316,7 +316,7 @@ footer {
     .hero {
         height: auto;
         min-height: 100vh;
-        padding: 200px 20px 70px;
+        padding: 40px 20px 70px;
     }
 
     .hero h1 {
@@ -362,10 +362,11 @@ footer {
     }
 
     .contenedor-imagenes-hero img,
-.contenedor-imagenes-proyectos img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
+    .contenedor-imagenes-proyectos img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
 
